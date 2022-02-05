@@ -1,0 +1,190 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+html,
+body {
+    height: 100%;
+
+}*/
+
+.navbar {
+    background-color: black;
+    border: 5px solid black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    background-color: grey;
+}
+
+
+.menubtn {
+    display: none;
+}
+
+.side {
+    background-color: rgb(184, 184, 184);
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: space-around;
+    height: 100%;
+    width: 200px;
+    justify-items: center;
+}
+
+main {
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+
+.container1 {
+    width: 100%;
+    height: 100%;
+}
+
+.megaimg {
+    border: 5px solid black;
+    background-color: black;
+    margin-left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mega {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-row: 2;
+    width: 100%;
+    height: 500px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.container2 {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    align-content: center;
+}
+
+.box1 {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+}
+
+.box2 {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+}
+
+.box3 {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+}
+
+.box4 {
+    background-color: grey;
+    width: 150px;
+    height: 150px;
+}
+
+
+.footbar {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 40px;
+}
+
+
+@media screen and (max-width:1000px) {
+    .side {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        margin-top: 0px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        gap: 5px;
+        width: 0%;
+    }
+
+    .navbar {
+        background-color: black;
+        border: 5px solid black;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+    }
+
+    a {
+        display: none;
+    }
+
+
+    button {
+        display: none;
+    }
+
+    #ricerca {
+        display: none;
+    }
+
+    .menubtn {
+        display: flex;
+
+    }
+
+    .svg-icon {
+        width: 1em;
+        height: 1em;
+    }
+
+    .svg-icon path,
+    .svg-icon polygon,
+    .svg-icon rect {
+        fill: #ffffff;
+    }
+
+    .svg-icon circle {
+        stroke: #ffffff;
+        stroke-width: 1;
+    }
+
+
+}
